@@ -144,15 +144,3 @@ document.querySelectorAll('.celebrate-btn').forEach(button => {
     });
 });
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    const audio = document.getElementById('bgAudio');
-
-    // Wait for first user interaction to play with sound
-    const playAudio = () => {
-        audio.play();
-        document.removeEventListener('click', playAudio);
-    };
-
-    document.addEventListener('click', playAudio);
-});
